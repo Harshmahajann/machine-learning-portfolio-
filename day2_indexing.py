@@ -25,3 +25,6 @@ print(days[mask])      # which days those were
 # fancy indexing — pick specific positions at once
 print(sales[[0, 3, 6]])   # Mon, Thu, Sun
 print(days[[0, 3, 6]])
+
+# combine both: days that beat the weekly average
+print(days[sales > sales.mean()])
